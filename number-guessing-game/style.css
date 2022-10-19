@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Fuzzy Bubbles', cursive;
+  background: linear-gradient(90deg, skyblue, white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button,
+input {
+  font-family: 'Fuzzy Bubbles', cursive;
+  all: unset;
+}
+
+main {
+  width: 375px;
+  height: 100vh;
+  text-align: center;
+  border: 6px white solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: aliceblue;
+  background-color: pink;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px white solid;
+  margin-bottom: 30px;
+}
+
+#result-area {
+  font-size: 25px;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 200px;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#chance-area {
+  margin-bottom: 20px;
+}
+
+#user-input {
+  display: block;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+}
+
+.button {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.play-button {
+  background-color: blue;
+}
+
+.reset-button {
+  background-color: brown;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  main {
+    width: 500px;
+    height: 700px;
+  }
+  #result-area {
+    width: 300px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 992px) {
+  main {
+    width: 700px;
+    height: 900px;
+  }
+
+  #result-area {
+    width: 300px;
+  }
+}
